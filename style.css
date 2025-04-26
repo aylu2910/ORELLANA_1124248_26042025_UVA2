@@ -1,0 +1,38 @@
+/* table {
+  table-layout: auto;
+  width: auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.materia-item {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 20%;
+} */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  margin: 0;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
