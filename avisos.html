@@ -4,65 +4,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avisos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="avisos.html">Avisos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobremi.html">Sobre mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="materias2025.html">Materias 2025</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+<body class="px-4 md:px-0">
+  <div
+    class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div
+      class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]">
+    </div>
+  </div>
+  <!-- Responsive header with mobile menu -->
+  <header class="fixed top-0 z-10 w-full mx-auto mt-2 md:bg-white/70 md:backdrop-blur-sm rounded-lg shadow-sm">
+    <!-- Desktop navigation -->
+    <nav class="hidden md:flex px-3 text-md font-bold rounded-full text-pink-400 justify-center items-center">
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="index.html">Home</a>
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="avisos.html">Avisos</a>
+      <a id="sobremi-link"
+        class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="sobremi.html">Sobre mi</a>
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="materias2025.html">Materias 2025</a>
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-400 active"
+        href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Mobile navigation dropdown -->
+    <div class="md:hidden flex justify-center">
+      <div class="relative">
+        <button id="mobile-menu-button"
+          class="flex items-center px-4 py-2 text-gray-700 bg-white border border-pink-200 rounded-md focus:outline-none shadow-sm hover:bg-pink-400">
+          <span>Menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div id="mobile-menu"
+          class="absolute hidden right-0 w-48 py-2 mt-2 bg-white rounded-md shadow-lg border border-pink-100">
+          <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Home</a>
+          <a href="avisos.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Avisos</a>
+          <a href="sobremi.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Sobre mi</a>
+          <a href="materias2025.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Materias
+            2025</a>
+          <a href="contacto.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Contacto</a>
         </div>
       </div>
-    </nav>
+    </div>
   </header>
-  <main>
-    <h1>Tareas pendientes</h1>
-    <ul>
-      <li class="materia-item">Diseño y Desarrollo Web</li>
-      <ul>
-        <li>
-          Realizar Cuestionario - Múltiple choice: Introducción a CSS 📋
-        </li>
-        <li>
-          Realizar Cuestionario - UX/UI de un sitio
-        </li>
-      </ul>
-      <li class="materia-item">Marketing</li>
-      <ul>
-        <li>
-          2.4 Ejercicio de realización individual - Análisis de Caso
-        </li>
-      </ul>
-      <li class="materia-item">Testing de Aplicaciones</li>
-      <ul>
-        <li>
-          TaskMaster - Entrega 1 📝
-        </li>
-      </ul>
-    </ul>
 
+  <main class="flex flex-col items-center justify-center mt-24 md:mt-20">
+    <div class="w-full md:max-w-3xl lg:max-w-2xl mx-auto overflow-x-auto">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside">
+          <li>
+            05/05 🗓️ Testing de Aplicaciones - Entrega TP TaskMaster
+          </li>
+          <li>
+            01/05 🗓️ Redes de Datos - Realizar Cuestionario
+          </li>
+          <li>
+            08/05 🗓️ Marketing - Entrega TP
+          </li>
+          <li>
+            29/04 🗓️ Paradigma Orientado a Objetos - Entrega TP
+          </li>
+          <li>
+            05/05 🗓️ Diseño y Desarrollo Web - Realizar Cuestionarios
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
+  <footer class="bg-pink-50 p-6 text-center rounded-lg shadow-sm border border-pink-100 mx-auto max-w-6xl my-60">
+    <p class="text-xl font-semibold text-pink-500">Curso: 15130 / Profesora: Patricia Litovicius</p>
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
