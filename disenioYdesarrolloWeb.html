@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño y Desarrollo Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-4 md:px-0">
+  <div
+    class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div
+      class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]">
+    </div>
+  </div>
+  <!-- Responsive header with mobile menu -->
+  <header class="fixed top-0 z-10 w-full mx-auto mt-2 md:bg-white/70 md:backdrop-blur-sm rounded-lg shadow-sm">
+    <!-- Desktop navigation -->
+    <nav class="hidden md:flex px-3 text-md font-bold rounded-full text-pink-400 justify-center items-center">
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="index.html">Home</a>
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="avisos.html">Avisos</a>
+      <a id="sobremi-link"
+        class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="sobremi.html">Sobre mi</a>
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-500"
+        href="materias2025.html">Materias 2025</a>
+      <a class="relative block px-6 md:px-10 py-2 text-l opacity-90 text-wrap transition hover:text-pink-400 active"
+        href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Mobile navigation dropdown -->
+    <div class="md:hidden flex justify-center">
+      <div class="relative">
+        <button id="mobile-menu-button"
+          class="flex items-center px-4 py-2 text-gray-700 bg-white border border-pink-200 rounded-md focus:outline-none shadow-sm hover:bg-pink-400">
+          <span>Menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div id="mobile-menu"
+          class="absolute hidden right-0 w-48 py-2 mt-2 bg-white rounded-md shadow-lg border border-pink-100">
+          <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Home</a>
+          <a href="avisos.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Avisos</a>
+          <a href="sobremi.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Sobre mi</a>
+          <a href="materias2025.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Materias
+            2025</a>
+          <a href="contacto.html" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="mt-20 md:mt-10 max-w-6xl mx-auto">
+    <!-- Page Title -->
+    <div class="text-center py-8">
+      <h1 class="text-4xl font-bold text-pink-700 relative inline-block">
+        Diseño y Desarrollo Web
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-pink-200 rounded-full"></span>
+      </h1>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <!-- Left Column -->
+      <div class="space-y-6">
+        <!-- Exam Dates Section -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-pink-100 hover:shadow-md transition duration-300">
+          <h2 class="text-2xl font-semibold text-pink-700 mb-4 border-b border-pink-100 pb-2">Fechas de exámenes</h2>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Primer parcial:</span> 15 de mayo de 2025
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Segundo parcial:</span> 28 de junio de 2025
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Recuperatorio:</span> 12 de julio de 2025
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Final:</span> Según calendario académico
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bibliography Section -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-pink-100 hover:shadow-md transition duration-300">
+          <h2 class="text-2xl font-semibold text-pink-700 mb-4 border-b border-pink-100 pb-2">Bibliografía</h2>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Título:</span> HTML5 y CSS3: Diseño y desarrollo web
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Autor:</span> Elizabeth Castro
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Título:</span> JavaScript: La guía definitiva
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Autor:</span> David Flanagan
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Título:</span> Responsive Web Design
+            </li>
+            <li class="flex items-start">
+              <span class="font-medium mr-2 text-pink-600">• Autor:</span> Ethan Marcotte
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-sm border border-pink-100 h-full hover:shadow-md transition duration-300">
+        <h2 class="text-2xl font-semibold text-pink-700 mb-4 border-b border-pink-100 pb-2">Actividades UVAs</h2>
+        <div class="space-y-4">
+          <div class="border-b border-pink-50 pb-4">
+            <h3 class="text-lg font-medium text-pink-600"><a
+                href="https://github.com/aylu2910/ORELLANA_-1124248_11042025_IntroaHTML">HTML - Introducción 📝</a></h3>
+          </div>
+
+          <div class="border-b border-pink-50 pb-4">
+            <h3 class="text-lg font-medium text-pink-600"><a
+                href="https://github.com/aylu2910/ORELLANA_-1124248_26042025_HTMLEtiquetas">HTML - Etiquetas 📝</a></h3>
+          </div>
+
+          <div class="border-b border-pink-50 pb-4">
+            <h3 class="text-lg font-medium text-pink-600"><a
+                href="https://github.com/aylu2910/ORELLANA_1124248_24042025_Integracion">Ejercicio integrador
+                📝(obligatorio)</a></h3>
+          </div>
+          <div class="border-b border-pink-50 pb-4">
+            <h3 class="text-lg font-medium text-pink-600"><a
+                href="https://github.com/aylu2910/ORELLANA_-1124248_24042025_Formatodetexto">Formato de texto 📝
+              </a></h3>
+          </div>
+          <div class="border-b border-pink-50 pb-4">
+            <h3 class="text-lg font-medium text-pink-600"><a
+                href="https://github.com/aylu2910/ORELLANA_1124248_24042025_Formatodecajas">Formato de cajas 📝
+              </a></h3>
+          </div>
+          <div class="border-b border-pink-50 pb-4">
+            <h3 class="text-lg font-medium text-pink-600"><a
+                href="https://github.com/aylu2910/ORELLANA_1124248_24042025_GridYFlexbox">Grid y Flexbox 📝
+              </a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-pink-30 p-6 text-center rounded-lg shadow-sm border border-pink-100 mb-8">
+    <p class="text-xl font-semibold text-pink-500">Curso: 15130 / Profesora: Patricia Litovicius</p>
+  </footer>
+
+  <!-- JavaScript for mobile menu toggle -->
+  <script src="index.js"></script>
+</body>
+
+</html>
